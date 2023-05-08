@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+* { margin:0; padding:0; box-sizing:border-box; }
+a, li { list-style:none; text-decoration:none; color:black;  }
+img, fieldset { border:0; vertical-align:middle; }
+address, em { font-style:normal; }
+body { font:12px 'ZCOOL KuaiLe', cursive; margin:0 auto;}
+#all { height:3300px; }
+@media screen and (min-width:501px) and (max-width:760px) {
+	#left { z-index:1000000000000;}
+	#menu h1 img{ width:180px; }
+
+	/* 위아래 스크롤 ( 오른쪽 ) */
+	.aside { position:fixed; right:0; top:400px; right:-10px; z-index:1000000000; }
+	
+	/* Main ( 오른쪽 ) */
+	#sectionUp { position:absolute; top:7%; width:90%; height:600px; background:url(../images/contents/mylogo3.png) no-repeat center center; padding-top:10px; left:5%; right:10%; z-index:-1000;}
+		#sectionUp img { width:90%; height:100%; }
+	section { display:none; }
+	
+	/* About ( 오른쪽 ) */
+	#about {  position:absolute; width:100%; height:700px; left:0%; right:10%; }
+		#about #info, #about #skills{ width:100%; height:50%; float:left; }
+		#info>img { width:90%; height:80%; margin-top:5%; z-index:-100; }
+		#about p { display:none;}
+		#about .bar { width:90%; }
+	#aboutBackground { width:100%; padding-right:-5%; background:#f2e6ee; }	
+		#skills { margin-top:200px; background:#f2e6ee; padding-left:5%; }
+	.aside { display:none; }
+	/* Works ( 오른쪽 ) */
+	/*#works { position:absolute; width:90%; height:700px; left:5%; right:10%; clear:both; overflow:hidden; }
+	
+	
+		#works #contents { width:90%; overflow:hidden; }
+		#works img {  float:left; }
+		#infographic img { width:160px;  float:left; }
+		#infographic li { position:absolute; left:-25%; }
+			#infographic #cover2 { ; }
+
+			
+	#type2 { margin:0 auto; margin-top:25px; }/* works 메뉴 */
+		
+		#type2 li { display:inline-block; text-align:center; }
+		#type2 li a { font-size:16px; padding-left:15px; font-weight:bold; }
+		#type2 li a:hover { color:#9be1ff; }
+		
+	#worksMobile { position:absolute; top:60%; width:90%;height:850px; left:5%; text-align:center; margin:0 auto; }
+	#worksMobile h1 {  font:35px 'Lalezar', cursive;  }
+	/* ------인포그래픽-------- */
+		#worksMobile #infographic { position:relative; left:-20%; width:90%; height:100%; text-align:center; overflow:hidden;  }
+		#worksMobile #infographic ul { width:90%; height:650px;  padding-left:12%; margin-left:15%; }
+		#worksMobile #infographic img { width:35%; float:left; }
+	/*	#worksMobile #infographic>#background { background-color:#d2a7c5; width:500px; width:100%; height:2000px; }*/
+	/* ------로고-------- */
+		#worksMobile { padding-left:0; }
+		#worksMobile #logo { position:relative; left:-28%; width:90%; height:100%; text-align:center; overflow:hidden;  }
+		#worksMobile #logo ul { width:90%; height:650px; padding-left:10%; margin-left:25%; }
+		/*#worksMobile #infographic>img { position:absolute; top:0; top:0; width:100%; height:100%; }		*/
+		#worksMobile #logo img { width:65%; float:left;  }
+			#worksMobile #logo img:nth-child(2) { padding-top:5%;  }
+		
+		
+	/* ------편집-------- */
+		#worksMobile #edit { position:relative; left:-20%; width:90%; height:100%; text-align:center; overflow:hidden; }
+		#worksMobile #edit ul { width:90%; height:650px; padding-left:8.5%; margin-left:15%; }
+		/*#worksMobile #infographic>img { position:absolute; top:0; top:0; width:100%; height:100%; }		*/
+		#worksMobile #edit img { width:38.5%; float:left; }
+			
+
+		
+	/* ------웹-------- */
+		#worksMobile #web { position:relative; left:-28%; width:90%; height:100%; text-align:center; overflow:hidden;  }
+		#worksMobile #web ul { width:100%; height:650px; padding-left:10%; margin-left:30%; }
+		/*#worksMobile #infographic>img { position:absolute; top:0; top:0; width:100%; height:100%; }		*/
+		#worksMobile #web img { width:55%; float:left;  }
+			#worksMobile #web img:nth-child(2) { padding-top:3%;  }
+		
+		/* ------그 외 등등-------- */
+		#worksMobile #others {  position:relative; left:-28%; width:90%; height:100%; text-align:center; overflow:hidden;   }
+		#worksMobile #others ul {width:100%; height:650px; padding-left:10%; margin-left:28%;}
+		/*#worksMobile #infographic>img { position:absolute; top:0; top:0; width:100%; height:100%; }		*/
+		#worksMobile #others img { width:77%; float:left;  }
+			#worksMobile #others img:nth-child(2) { padding-top:3%;  }
+	/*	#worksMobile #others>img:nth-child(2) { display:none; width:100%; } */
+		#background { position:absolute; top:1850px; left:0%; right:0%; width:110%; height:1750px; background:#eee;  z-index:-10;}
+	
+
+	*/	
+	#works {  }
+	/* Works ( 오른쪽 ) */
+	#table { background:#eeeeee; position:absolute; width:70%; height:760px; top:75%; width:100%; left:5%; margin-bottom:-50%; right:10%; }
+	#table #my { width:40%; height:100%; }
+		#table form { width:60%; height:100%; z-index:1000000000; }
+	
+	
+	
+	
+	#table #my { width:40%; height:100%; }
+		#table form { width:60%; height:100%; }
+		
+		
+		
+		
+		.scrollup { width:50%; right:-15%; bottom:-8%; z-index:10000000000000000000;}
+	/**/
+}	
+

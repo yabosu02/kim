@@ -1,0 +1,139 @@
+﻿@charset "utf-8";
+* { margin:0; padding:0; box-sizing:border-box; }
+li { list-style:none; }
+@charset "utf-8";
+* { margin:0; padding:0; box-sizing:border-box; }
+li { list-style:none; }
+img, fieldset { border:0; vertical-align:middle; }
+address, em { font-style:normal; }
+
+
+body *{ box-sizing:border-box;  }
+#wrapper { width:100%; margin:0 auto;  margin-bottom:50px; width:90%;}
+
+/*---------------------------헤더 영역--------------------------------*/	
+#header h1 { padding:5px 0 5px 5px; left:50%; right:50%; }
+	#header h1 img { width:72px; height:60px; }
+	
+	#navi { /* width:400px; */ height:70px; background:#40a3e4; }
+	#gnb { width:100%; text-align:center; margin-left:20%; }
+	#gnb>li { float:left; width:200px;  }
+	#gnb a { width:200px; float:left; font-size:20px; color:#666666; height:70px; line-height:70px; text-decoration:none; background:#40a3e4; }
+	
+	#gnb a:hover { color:#fff; background:#6a6a6a; }
+	#gnb>li ul { display:none; position:absolute; top:140px; z-index:150; }
+	#subMenu { position:absolute; top:10px;  }
+		#subMenu li { width:200px; }
+		#subMenu li a { width:100%; font-family:sans-self; font-size:14px; display:block; }
+	
+/*-------------------------컨테이너 영역-----------------------------*/	
+#container { clear:both; width:100%; }	
+	#mainSlide { position:relative; width:100%; height:350px; overflow:hidden; }
+		#mainSlide li { position:absolute; left:-1201px; top:0; z-index:50; width:1200px; height:350px; }
+		#mainSlide li.first { left:0; }
+		#mainSlide li img { width:100%; height:100%; /*display:none;*/ }
+		
+		#mainSlideText { width:600px; height:140px; position:absolute; left:50%; top:50%; margin-left:-300px; margin-top:-70px; background-color:rgba(255,255,255,0.8); border-radius:20px; text-align:center; z-index:100; font-size:30px;padding-top:30px; }
+		#mainSlideText span { font-size:50px; color:#40a3e4; }
+	
+	#contents { width:100%; position:relative; overflow:hidden; margin:20px 0;  }
+		#contents .con { position:relative; float:left; width:100%; height:280px; margin:0 10px; padding-top:50px; background:url(../images/tab_under_bar.jpg) repeat-x 0 33px; } /* 중반부 수강후기~ 현장 스케치 탭 */
+		#contents dt, #contents h2 { font-size:20px; font-weight:bold; }
+		
+		#tab { width:100%;  }
+			.tabList { position:absolute; font-size:14px;}
+				.tabList dt { position:absolute; left:5px; top:-50px; width:100px; height:35px; text-align:center; line-height:35px; border:2px solid #666; border-radius:10px 10px 0 0; background-color:#fff; cursor:pointer; }
+				.tabList.list1 { float:left; width:50%;}
+				.tabList.list2 { position:absolute; left:50%; float:right; width:50%; }
+				.tabList dd { float:left; padding:10px 0 10px 15px; background:url(../images/bul.gif) no-repeat 5px center; }
+				.tabList dd:hover { background:#40a3e4; color:#fff; }
+				.tabList dd span { float:right; }
+				.tabList.list1 dd { width:95%; }
+				.tabList.list2 dd { width:95%; }
+				.tabList.list2 {  }
+				
+		#info { width:48%; font-size:14px; float:left; }
+			.infoList {width:48%; float:left; }
+			.infoList dt, .con h2 { position:absolute; left:5px; top:7px;  }
+			.infoList dd { position:relative; width:100%; height:70px; margin-top:5px; border:2px solid #666; border-radius:10px; font-size:40px; padding-left:70px; line-height:70px; color:#6a6a6a; }
+			.infoList dd:nth-of-type(1) { background:url(../images/document.png) no-repeat 10px center/40px 40px; }
+			.infoList dd:nth-of-type(2) { background:url(../images/recircle.png) no-repeat 10px center/40px 40px; }
+			.infoList dd:nth-of-type(3) { background:url(../images/phone.png) no-repeat 10px center/40px 40px; }
+			
+			.infoList dd span { position:absolute; right:20px;  }
+			.infoList dd span img { height:30px; }/*	*/
+			
+			.infoList dd:hover { color:#40a3e4; }
+			.infoList dd:nth-of-type(1):hover { background:url(../images/document_o.png) no-repeat 10px center/40px 40px; }
+			.infoList dd:nth-of-type(2):hover { background:url(../images/recircle_o.png) no-repeat 10px center/40px 40px; }
+			.infoList dd:nth-of-type(3):hover { background:url(../images/phone_o.png) no-repeat 10px center/40px 40px; }
+			.infoList dd:hover span { animation:aaa 1s infinite; }
+			
+			@keyframes aaa {
+				0% { right:50px; opacity:1; }
+				100% { right:20px; opacity:0; }
+			}
+			
+		#popUp { float:right; width:50%; }
+		#popBack { position:absolute; left:0; top:50px; width:100%; height:230px; background:url(../images/seminar.jpg) no-repeat center center/cover; overflow:hidden; }
+			#popBack #black { position:absolute; left:0; top:290px; width:100%; height:230px; background:rgba(0,0,0,0.5); padding:10px; cursor:pointer;/*display:none;*/ }
+			#popBack #line { text-align:center; height:210px; border:1px solid #fff; }
+			#popBack p { font-weight:bold; }
+			#popBack .one { color:#40a3e4; font-size:14px; margin-top:40px; }
+			#popBack .two { color:#fff; font-size:32px; margin-top:20px; }
+			#popBack .three { width:110px; height:30px; line-height:30px; background:#000; color:#fff; font-size:15px; margin:35px auto; margin-bottom:0;  border-radius:5px; }
+			
+			
+		#pop { position:absolute; left:75px; top:440px;  width:380px; height:334px; border:2px solid #000; background:url(../images/seminar.jpg) no-repeat center center/cover; z-index:999999; box-shadow:5px 5px 5px #000; }
+			#pop h2, #popText { font-size:30px; color:#40a3e4; width:350px; height:90px;  font-weight:bold; margin:20px auto; background:#fff; border-radius:20px; text-align:center; line-height:90px; }
+			#popText { font-size:20px; text-align:left; color:#6a6a6a; height:160px; line-height:1.6; padding:20px 0 0 20px; } 
+			#pop .close { position:absolute; bottom:10px; right:10px; font-weight:bold; color:#000; cursor:pointer; }
+		
+		
+	#subSlide { display:none; font-family:sans-self; clear:both; position:relative; width:100%;height:160px;  margin-bottom:20px; overflow:hidden; /*300*14=4200*/}
+		ul#txtSlide li { position:absolute; left:0; top:0; width:300px; height:160px; border:1px solid #000; text-align:centerl line-height:160px; }
+		
+		ul#txtSlide li { color:#fff; font-weight:bold; background-color:#6a6a6a;  text-align:center; font-size:30px; padding-top:50px; }
+		ul#txtSlide li:nth-child(2n) { background-color:#40a3e4; }
+
+/*---------------------------푸터 영역--------------------------------*/		
+	#footer { overflow:hidden; background-color:#6a6a6a; padding:30px 0; color:#fff; text-align:center; }	
+		#footer h1 { float:left; margin-left:28px; }
+		#footer #foot { margin-bottom:20px; }/**/
+		#footer li { display:inline; margin-right:20px; }
+		#footer li a { color:#fff; text-decoration:none; }
+	#footer address { line-height:20px; }/*	*/
+	#navi #gnb li h2 {  cursor:pointer;  }	
+	#bottom li { float:left; width:33.33%; height:70px; }
+	#bottom .pictureOne img { width:100%; height:100%;  }
+	#bottom .pictureTwo img { width:100%; height:100%;  }
+	#bottom .pictureThree img { width:100%; height:100%;  }	
+#footer { width:100%; font-size:10px; height:120px; padding-top:4px;  }	
+	#footer img { position:absolute; top:1520px; left:32px; margin-top:-10px; float:left; width:40px; height:30px; }
+	#footer li { display:none; }
+	#foot li a { padding-bottom:40px;}
+	#foot {  /* padding-bottom:20px; */ }
+	#footer address { clear:both;   }
+#bottom {  width:110%; display:inline-block; padding-bottom:40px; }
+#bottom li {line-height:50%; float:left; width:15%; height:70px; }
+#bottom .pictureOne img { width:120%; height:135%;  }
+#bottom .pictureTwo img { width:120%; height:135%;  }
+#bottom .pictureThree img { width:120%; height:135%; clear:both; }
+#bottom .textBottom { display:none; }
+#bottom .video1 video { width:140%; height:137%;  margin-left:30px; }
+#bottom .video2 video { width:140%; height:137%; margin-left:80px; }
+		@media screen and (min-width:801px) and  ( max-width:1199px ) {
+	#gnb 
+	body *{ transition:all 0.5s;  }
+	#ham { display:none; }
+		#container { width:100%; }
+		#contents { width:100%; }
+		#contents span { float:right; }
+	#subSlide { display:none; }
+	.tabList dt span { float:right; }
+	.list1 { float:left; width:50%; }
+	.list2 { float:right; width:50%; }
+	#info { float:left; width:50%; }
+	#popUp { float:right; width:50%; }
+	#popUp.con { float:right; width:48%; position:absolute; top:280px; left:50%; }
+}

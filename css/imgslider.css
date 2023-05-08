@@ -1,0 +1,146 @@
+﻿@charset "utf-8";
+* { margin:0; padding:0; box-sizing:border-box; }
+a, li { list-style:none; text-decoration:none; color:black;  }
+img, fieldset { border:0; vertical-align:middle; }
+address, em { font-style:normal; }
+body { font:12px 굴림; }
+body * { box-sizing:border-box; margin:0 auto; font-family:sans-serif; }
+#wrapper { width:2000px;  }
+
+		/* infographic 이미지 (1) 팝업창 */ 
+		
+		#infoPop #infoPopUp { display:none;/* */ position:fixed; left:30%; top:-4%;  margin-left:100px; margin-top:50px; text-align:center; width:600px; height:900px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#infoPop img { width:530px; padding-right:60px; text-align:center; cursor:pointer; }
+			#infoPop span { position:absolute; top:0; right:-50%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold; }
+			#infoPop span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#infoPopUp h2 {  float:left; padding:5% 0 4% 12%; font-weight:bold; color:#9be1ff; } 
+				#infoPopUp h3 { float:left; margin-top:5%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+		
+		/* infographic 이미지 (2) 팝업창 */ 
+		
+		#infoPop2 #body { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#infoPop2 #infoPopUp2 { display:none; position:fixed; left:30%; top:-4%; margin-left:100px; margin-top:50px; text-align:center; width:530px; height:920px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#infoPopUp2 img { width:87%; padding-right:90px; text-align:center; cursor:pointer; }
+			#infoPopUp2 span { position:absolute; top:0; right:-50%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#infoPopUp2 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#infoPopUp2 h2 {  float:left; padding:5% 0 4% 12%; font-weight:bold; color:#9be1ff; } 
+				#infoPopUp2 h3 { float:left; margin-top:5%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+				
+		/* infographic 이미지 (3) 팝업창 */ 
+		
+		#infoPop3 #body3 { display:none; /**/ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#infoPop3 #infoPopUp3 { display:none; /**/ position:fixed; left:25%; top:-3%; margin-left:100px; margin-top:50px; text-align:center; width:850px; height:910; background:white; outline:1px solid blue; z-index:10000000000; }
+			#infoPopUp3 img { width:95%; padding-right:30px; text-align:center; cursor:pointer;  }
+			#infoPopUp3 span { position:absolute; top:0; right:-70%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#infoPopUp3 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#infoPopUp3 h2 {  float:left; padding:5% 0 4% 5%; font-weight:bold; color:#9be1ff; } 
+				#infoPopUp3 h3 { float:left; margin-top:5%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+				
+				
+				
+				
+		
+		
+		/* logo 이미지 (1) 팝업창 */ 
+		
+		#logoPop #body4 {display:none;  /**/ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#logoPop #logoPopUp {display:none;  /**/ position:fixed; left:25%; top:-2%; margin-left:-75px; margin-top:50px; text-align:center; width:1040px; height:870; background:white; outline:1px solid blue; z-index:10000000000; }
+			#logoPopUp img { width:98%; padding-right:30px; padding-bottom:10px; text-align:center; cursor:pointer;  }
+			#logoPopUp span { position:absolute; top:0; right:-70%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#logoPopUp span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#logoPopUp h2 {  float:left; padding:4% 0 4% 2.5%; font-weight:bold; color:#9be1ff; } 
+				#logoPopUp h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+		/* logo 이미지 (2) 팝업창 */ 
+		
+		#logoPop2 #body5 {display:none;  /**/ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#logoPop2 #logoPopUp2 {display:none;  /**/ position:fixed; left:25%; top:-2%; margin-left:-75px; margin-top:50px; text-align:center; width:1040px; height:870px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#logoPopUp2 img { width:98%; padding-right:30px; padding-bottom:10px; text-align:center; cursor:pointer;  }
+			#logoPopUp2 span { position:absolute; top:0; right:-70%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#logoPopUp2 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#logoPopUp2 h2 {  float:left; padding:4% 0 4% 2.5%; font-weight:bold; color:#9be1ff; } 
+				#logoPopUp2 h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+				
+			/*edit 이미지 (1) 팝업창 */ 
+		
+		#editPop #body6 {display:none;  /**/ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#editPop #editPopUp {  display:none;/**/ position:fixed; left:42%; top:-3%; margin-left:-75px; margin-top:50px; text-align:center; width:400px; height:910px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#editPopUp img { width:83.7%; padding-right:55px; padding-bottom:10px; text-align:center; cursor:pointer;  }
+			#editPopUp span { position:absolute; top:0; right:-30%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#editPopUp span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#editPopUp h2 {  float:left; padding:4% 2% 6% 16%; font-weight:bold; color:#9be1ff; } 
+				#editPopUp h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }		
+				
+				/*edit 이미지 (2) 팝업창 */ 
+		
+		#editPop2 #body7 {display:none;  /**/ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#editPop2 #editPopUp2 { display:none;/* */ position:fixed; left:42%; top:-3%; margin-left:-75px; margin-top:50px; text-align:center; width:400px; height:910px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#editPopUp2 img { width:83.7%; padding-right:55px; padding-bottom:10px; text-align:center; cursor:pointer;  }
+			#editPopUp2 span { position:absolute; top:0; right:-30%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#editPopUp2 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#editPopUp2 h2 {  float:left; padding:4% 2% 6% 16%; font-weight:bold; color:#9be1ff; } 
+				#editPopUp2 h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }	
+
+
+
+				/*edit 이미지 (3) 팝업창 */ 
+		
+		#editPop3 #body8 {display:none;position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#editPop3 #editPopUp3 {display:none; position:fixed; left:25%; top:-3%; margin-left:0%; margin-top:50px; text-align:center; width:850px; height:910; background:white; outline:1px solid blue; z-index:10000000000; }
+			#editPopUp3 img { width:80%; padding-right:120px; padding-top:-50px; cursor:pointer;  }
+			#editPopUp3 span { position:absolute; top:0; right:-70%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#editPopUp3 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#editPopUp3 h2 {  float:left; padding:4% 2% 6% 2%; font-weight:bold; color:#9be1ff; } 
+				#editPopUp3 h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }		
+				
+				
+				
+				
+				
+				/*web 이미지 (1) 팝업창 */ 
+		
+		#webPop #body9 {display:none;position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#webPop #webPopUp {display:none; position:fixed; left:25%; top:-0%; margin-left:0%; margin-top:50px; text-align:center; width:950px; height:850px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#webPopUp img { width:98%; padding-left:-120px; padding-right:25px; padding-bottom:20px; text-align:center; cursor:pointer;  }
+			#webPopUp span { position:absolute; top:0; right:-70%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#webPopUp span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#webPopUp h2 {  float:left; padding:6% 2% 6% 3%; font-weight:bold; color:#9be1ff; } 
+				#webPopUp h3 { float:left; margin-top:6%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }		
+				
+				/*web 이미지 (2) 팝업창 */ 
+		
+		#webPop2 #body10 { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#webPop2 #webPopUp2 { display:none; position:fixed; left:42%; top:-3%; margin-left:0%; margin-top:50px; text-align:center; width:420px; height:910px; background:white; outline:1px solid blue; z-index:10000000000; }
+			#webPopUp2 img { width:95%; padding-left:-120px; padding-right:25px; padding-bottom:20px; text-align:center; cursor:pointer;  }
+			#webPopUp2 span { position:absolute; top:0; right:-30%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#webPopUp2 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#webPopUp2 h2 {  float:left; padding:4% 2% 6% 5%; font-weight:bold; color:#9be1ff;} 
+				#webPopUp2 h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+
+				/*web 이미지 (3) 팝업창 */ 
+		
+		#webPop3 #body11 { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#webPop3 #webPopUp3 { display:none; position:fixed; left:25%; top:-3%; margin-left:0%; margin-top:50px; text-align:center; width:850px; height:910; background:white; outline:1px solid blue; z-index:10000000000;  }
+			#webPopUp3 img { width:95%; padding-left:-120px; padding-right:50px; padding-bottom:50px; text-align:center; cursor:pointer;  }
+			#webPopUp3 span { position:absolute; top:0; right:-70%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#webPopUp3 span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#webPopUp3 h2 {  float:left; padding:4% 2% 6% 5%; font-weight:bold; color:#9be1ff;} 
+				#webPopUp3 h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+				
+				
+				/*others 이미지 (1) 팝업창 */ 
+		
+		#othersPop #body12 { display:none;  /**/ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0, 0.6); z-index:10000000; }
+		#othersPop #othersPopUp { display:none; /**/ position:fixed; left:10%; top:-3%; margin-left:0%; margin-top:50px; text-align:center; width:1400px; height:910; background:white; outline:1px solid blue; z-index:10000000000;  }
+			#othersPopUp img { width:95%; padding-left:-120px; padding-right:50px; padding-bottom:50px; text-align:center; cursor:pointer;  }
+			#othersPopUp span { position:absolute; top:0; right:-80%; cursor:pointer; width:50px; left:400px; line-height:50px; background:#fff; border-radius:55px; font-weight:bold;}
+			#othersPopUp span:hover { color:#9be1ff;  } /* popUp h2, h3은 팝업창 간단 설명 */ 
+				#othersPopUp h2 {  float:left; padding:4% 2% 6% 5%; font-weight:bold; color:#9be1ff;} 
+				#othersPopUp h3 { float:left; margin-top:4%; margin-left:4%; padding:4px; font-size:13px; border:2px solid gray; color:gray; border-radius:20px; }
+				
+				

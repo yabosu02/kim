@@ -1,0 +1,101 @@
+﻿* { margin:0; padding:0; }
+li {list-style-type:none; }
+img, fieldset {border:none; vertical-align:bottom; }
+address, em { list-style:normal; }
+table { border-collapse:collapse; }
+table, th, td { border:1px solid #000; }
+h2, h3 { font-weight:normal; }
+/* reset.css */
+
+body{ font:11px 굴림, gulim, sans-serif; background:url(../images/M_bg.gif) repeat-x 0 48px; /* 문제발생 */  }
+#wrapper { width:900px; margin:0 auto; } 
+	#header { overflow:hidden; }
+		#header h1 { padding:7px 0 10px; float:left; }
+		#header .util { float:right; margin:10px 0px 10px; 10px;  }
+		#header .util li { float:left; }
+		#header .util li a { font-weight:bold; float:left; padding:0 10px; color:#000; text-decoration:none; }
+		#header .util li a:hover { color:orange; }
+		#header .util span { color:orange; }
+
+		
+
+#mainMenu {  width:900px; height:35px; overflow:hidden; }
+#mainMenu li { float:left; }
+#mainMenu li a { display:block; width:150px; height:70px; }
+#main li#menu1>a { background:url(../images/M_Intro.gif) no-repeat; }
+#main li#menu1>a:hover { background-position:0 -35px; }
+
+#main li#menu2>a { background:url(../images/M_Join.gif) no-repeat; }
+#main li#menu2>a:hover { background-position:0 -35px; }
+
+#main li#menu3>a { background:url(../images/M_Share.gif) no-repeat; }
+#main li#menu3>a:hover { background-position:0 -35px; }
+
+#main li#menu4>a { background:url(../images/M_Story.gif) no-repeat; }
+#main li#menu4>a:hover { background-position:0 -35px; }
+
+#main li#menu5>a { background:url(../images/M_Event.gif) no-repeat; }
+#main li#menu5>a:hover { background-position:0 -35px; }
+
+#main li#menu6>a { background:url(../images/M_Comm.gif) no-repeat; }
+#main li#menu6>a:hover { background-position:0 -35px; }
+
+
+#container {  position:relative; }
+#container h2 { margin-top:30px; float:left; }
+#container h4 { margin-top:30px; float:right;  z-index:-99; }
+#container h5 { margin-top:30px; float:right; }
+
+#container #sub  {position:absolute; right:20px; top:180px; }
+#container #sub li { float:left; }
+#container #sub li a { padding-left:5px; }
+#container #sub li#mini1 a:hover { background-image:url(../images/1_on.gif); z-index:99; }
+
+
+
+
+#mainMenu {  width:900px; height:35px; overflow:hidden; background:}
+#mainMenu li { float:left; display:block;}
+#mainMenu li a {  }
+#main li#menu1>a { background:url(../images/M_Intro.gif) no-repeat; }
+#main li#menu1>a:hover { background-position:0 -35px; }
+
+
+#container #subdown { width:300px; padding-left:8px; overflow:hidden; background:url(../images/quick_bg.gif) no-repeat; position:absolute; top:235px; left:600px;  }
+#container #subdown li { float:left;   }
+#container #subdown li a { display:block; width:48px; height:63px;    }
+
+#subdown li#kk1>a { width:52px height:60px; background:url(../images/m_quick_1.gif) no-repeat; }
+#subdown li#kk1>a:hover { background:url(../images/m_quick_1_ov.gif) no-repeat; }
+
+#subdown li#kk2>a { width:48px height:60px; background:url(../images/m_quick_2.gif) no-repeat; }
+#subdown li#kk2>a:hover { background:url(../images/m_quick_2_ov.gif) no-repeat; }
+
+#subdown li#kk3>a { width:51px height:60px; background:url(../images/m_quick_3.gif) no-repeat; }
+#subdown li#kk3>a:hover { background:url(../images/m_quick_3_ov.gif) no-repeat; }
+
+#subdown li#kk4>a { width:50px height:60px; background:url(../images/m_quick_4.gif) no-repeat; }
+#subdown li#kk4>a:hover { background:url(../images/m_quick_4_ov.gif) no-repeat; }
+
+#subdown li#kk5>a { width:50px height:60px; background:url(../images/m_quick_5.gif) no-repeat; }
+#subdown li#kk5>a:hover { background:url(../images/m_quick_5_ov.gif) no-repeat; }
+
+#subdown li#kk6>a { width:49px height:60px; background:url(../images/m_quick_6.gif) no-repeat; }
+#subdown li#kk6>a:hover { background:url(../images/m_quick_6_ov.gif) no-repeat; }
+
+#today { float:left; margin-bottom:40px; font-size:11px; }
+#today h6 { padding-bottom:10px;  }
+#today p.one { float:left; width:280px; margin-right:10px; }
+#today p.two { float:left; width:280px; }
+#today p img { float:left; }
+#today span { font-weight:bold; line-height:200%;  }
+#today .one { font-weight:normal;  }
+
+#banner { width:570px; clear:both; overflow:hidden; }
+#banner li { float:left; }
+
+#footer { clear:both; text-align:center; }
+#footer #foot { border-top:1px solid gray; margin-top:20px;  }
+#footer #foot li { margin-top:20px; display:inline-block; margin-bottom:20px;  }
+
+#last address { font-weight:bold; text-align:center; font-style:normal; line-height:130%; font-size:10px;   }
